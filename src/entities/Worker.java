@@ -48,15 +48,12 @@ public class Worker {
 	public List<HourContract> getContracts() {
 		return contracts;
 	}
-	
 	public void addContract(HourContract contract) {
 		contracts.add(contract);
 	}
-	
 	public void removeContract(HourContract contract) {
 		contracts.remove(contract);		
 	}
-	
 	public double income(int year, int month) {
 		double sum = baseSalary;
 		Calendar cal = Calendar.getInstance() ;
@@ -68,8 +65,6 @@ public class Worker {
 				sum += c.totalValue();
 			}
 		}
-		return sum;
-		
-		
+		return sum;	
 	}
 }
